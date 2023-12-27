@@ -1,0 +1,926 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+li {
+list-style: none;
+}
+/*コメント*/
+
+/*背景画像*/
+.header-image {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  background-image: url(../img/image1.png);
+  background-size: cover;
+  position: relative;
+}
+/*背景画像終わり*/
+
+.header-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+/*imgロゴ*/
+.main-img1 {
+  position: absolute;
+  top: 40px;
+  width: 17%;
+  text-align: right;
+}
+.img1 {
+  width: 50px;
+  margin: 0 40px 0 0;
+}
+.img2 {
+  width: 60px;
+  display: inline-block;
+  position: absolute;
+}
+/*imgロゴ終わり*/
+
+/*辻利ロゴ*/
+.forPractice {
+  font-size: 80px;
+  color:rgb(39, 62, 45);
+  position: relative;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  text-shadow: 3px 3px 5px rgb(9, 92, 0);
+}
+.forPractice::before,
+.forPractice::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 50%;
+  height: 5px;
+  box-shadow: 3px 3px 5px rgb(10, 68, 22);
+}
+.forPractice::before {
+  left: 0;
+  background: rgb(8, 45, 0);
+}
+.forPractice::after {
+  right: 0;
+  background: rgb(0, 93, 13);
+}
+
+.forPractice a {
+  color:rgb(39, 62, 45);
+}
+/*辻利ロゴ終わり*/
+
+/*ハンバーガーメニュー*/
+.header-menu {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 0 100px 0 20px;
+  cursor: pointer;
+}
+.fa-solid {
+  font-size: 22px;
+}
+.header-menu span {
+  font-size: 13px;
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*ハンバーガーメニュー終わり*/
+
+/*言語選択要素*/
+.add2 {
+  width: 120px;
+  position: relative;
+}
+.header1-buttom {
+  background-color: #e4e4e4;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header1-buttom:hover,
+.header2-buttom:hover {
+  background-color: #aeaeae;
+  transition: all 0.2s;
+}
+.text {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  position: absolute;
+}
+.header2-buttom {
+  position: relative;
+  padding: 5px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.add-span {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  font-size: 8px;
+}
+/*言語選択要素終わり*/
+
+/*オンラインショップ部分*/
+.onlinelink-leader {
+  height: 91.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.onlinelink {
+  background-color: rgba(0, 0, 0, 0.648);
+  width: 77%;
+}
+.onlinelink-p {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.onlinelink-ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.onlinelink-li {
+  list-style: none;
+  width: 32.7%;
+}
+.onlinelink-a {
+  display: inline-block;
+  opacity: 1;
+}
+.onlinelink-a:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+.onlinelink-img {
+  width: 100%;
+}
+/*オンラインショップ部分終わり*/
+
+
+/*overlay部分*/
+.overlay-head {
+  text-align: right;
+  margin: 0;
+}
+.menu-close {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0 110px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "A1 Mincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+}
+
+.overlay a {
+  color: white;
+}
+.overlay a:hover {
+  color: rgb(183, 183, 183);
+  transition: all 0.2s;
+}
+.overlay li {
+  color: white;
+}
+.overlay-contents {
+  border: 1px solid rgb(119, 241, 255);
+  width: 52%;
+  margin: 0 auto;
+}
+.overlay-ul {
+  border: 1px solid pink;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.overlay-li {
+  border: 1px solid yellow;
+}
+.overlay-ul-child {
+  padding: 0;
+  margin: 10px 0;
+}
+.overlay-li-child {
+  position: relative;
+  padding: 0 0 0 35px;
+  margin: 20px 0;
+}
+.overlay-li-child::before {
+  content: "";
+  height: 1px;
+  width: 13px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 11px;
+  left: 0;
+  display: block;
+}
+.onlinelink2 {
+  width: 100%;
+}
+.onlinelink-leader2 {
+  border: 1px solid pink;
+  height: 27.5%;
+}
+.overlay-contents-leader {
+  border: 1px solid rgb(255, 0, 0);
+}
+.overlay-contents-leader-leader {
+  border: 1px solid rgb(247, 0, 255);
+}
+/*overlay部分終わり*/
+
+
+.second-background-img {
+  background-image: url("https://kidetatetemiyou.com/2019/07/12/aa0af4782d282888effbff21384e46b04d89f06c.jpg");
+  height: 600px;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+}
+.second-left {
+  border: 1px solid blue;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.second-left::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 150%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transform: skewX(40deg);
+  left: -250px;
+}
+.second-data {
+  margin: 0;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 20px;
+}
+.end {
+  position: relative;
+  display: inline-block;
+}
+.end::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  margin: 12px 20px;
+}
+.second-title {
+  font-size: 80px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.second-subtitle {
+  margin: 0;
+  text-align: center;
+}
+.second-bottom {
+  border: 1px solid red;
+  padding: 100px 30px 0 30px;
+  letter-spacing: 3px;
+}
+.second-bottom-title {
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 19px;
+}
+.z-index {
+  position: relative;
+}
+
+
+.second-right {
+  border: 1px solid yellow;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+.second-right-block {
+  border: 1px solid rgb(0, 255, 234);
+}
+.second-right-p-img {
+  border: 1px solid pink;
+  padding: 80px 100px 0 0;
+  display: inline-block;
+}
+.second-right-img {
+  width: 55px;
+}
+.second-right-title {
+  margin: 0;
+  padding-right: 42px;
+}
+.second-right-subtitle {
+  font-size: 20px;
+  padding-right: 70px;
+}
+
+
+
+/*------------4分割部分-----------*/
+.four-divisions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.division1,
+.division4 {
+  width: 50%;
+  height: 420px;
+  background-color: #a7a89c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.division1-text,
+.division4-text {
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding: 50px;
+  letter-spacing: 2.5px;
+  line-height: 30px;
+}
+.division2 {
+  width: 50%;
+  height: 420px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwpwtOVKJs1bIO_xz4xYJNUCi71_c-mHOhCg&usqp=CAU);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.division3 {
+  width: 50%;
+  height: 420px;
+  background-image: url(https://cf.furunavi.jp/product_images/963/683724/4.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.division2::before,
+.division3::before {
+  content: "";
+  width: 100%;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+}
+.division2-img,
+.division3-img {
+  width: 60px;
+  padding: 10px 0;
+  position: relative;
+}
+.division2-text,
+.division3-text {
+  color: white;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+}
+.division2-title,
+.division3-title {
+  color: white;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+}
+.division2-link a,
+.division3-link a {
+  color: white;
+  border: 1px solid white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  width: 100%;
+  padding: 15px 40px;
+  position: relative;
+}
+.division2-link a:hover,
+.division3-link a:hover {
+  background-color: #fafafa35;
+  transition: all 0.2s;
+}
+.division2-link a::after,
+.division3-link a::after {
+  content: ">";
+  display: inline-block;
+  transform: scale(1, 1.5);
+  font-size: 14px;
+  position: absolute;
+  top: 34%;
+  right: 8px;
+}
+
+
+
+
+
+/*--------shop-info-------*/
+.shop-info {
+  height: 1000px;
+}
+.shop-info-top {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 100px;
+}
+.shop-info-top h2 {
+  letter-spacing: 5px;
+}
+.shop-info-image {
+  background-image: url(../img/image2.png);
+  background-size: cover;
+  height: 600px;
+  width: 80%;
+  margin: 90px auto 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+}
+.shop-info-image::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.shop-info-left {
+  width: 50%;
+  text-align: center;
+}
+.shop-info-right {
+  width: 50%;
+  text-align: center;
+}
+.shop-info-top-p {
+  font-size: 13px;
+  position: relative;
+}
+.shop-info-div-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop-info-div-tag a {
+  color: white;
+  border: 1px solid white;
+  display: inline-block;
+  width: 40%;
+  margin: 10px 0;
+  padding: 10px 30px;
+  position: relative;
+}
+.shop-info-div-tag a:hover {
+  background-color: rgba(214, 214, 214, 0.2);
+}
+.shop-info-div-tag1::after {
+  content: ">";
+  position: absolute;
+  top: 27%;
+  right: 8px;
+}
+.shop-info-div-tag2::after {
+  content: ">";
+  position: absolute;
+  top: 27%;
+  right: 8px;
+}
+.shop-info-div-tag3::after {
+  content: ">";
+  position: absolute;
+  top: 38%;
+  right: 8px;
+}
+.shop-info-h2 {
+  position: relative;
+}
+.shop-info-h2::before {
+  content: "";
+  height: 1.5px;
+  width: 40px;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+  left: 46%;
+}
+
+
+
+/*-----------買う/食べる-------------*/
+.buy-eat-select {
+  background-image: url(../img/image3.png);
+  background-size: cover;
+  height: 750px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.buy-eat-block {
+  text-align: center;
+  padding-top: 100px;
+}
+.buy-eat-block-h2,
+.buy-eat-block-span {
+  display: block;
+  letter-spacing: 5px;
+}
+.buy-eat-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  width: 100%;
+  padding: 0 100px;
+}
+.buy-area,
+.eat-area {
+  width: 40%;
+}
+.buy-area-h3,
+.eat-area-h3 {
+  font-size: 70px;
+}
+.buy-area-span,
+.eat-area-span {
+  display: inline-block;
+  letter-spacing: 5px;
+}
+.buy-area-click-div a,
+.eat-area-click-div a {
+  color: white;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 10px 40px;
+  position: relative;
+}
+.buy-area-click-div a:hover,
+.eat-area-click-div a:hover {
+  background-color: rgba(220, 220, 220, 0.2);
+  transition: all 0.2s;
+}
+.buy-area-click-div a::after,
+.eat-area-click-div a::after {
+  content: ">";
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  transform: scale(1, 1.7);
+}
+
+
+/*----------footer要素----------*/
+footer {
+  background-color: rgb(157, 168, 155);
+}
+.footer-top-area {
+  padding: 100px 0;
+}
+.footer-top-h3 {
+  text-align: center;
+  margin: 0;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 21px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer-top-span {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  padding-bottom: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer-img-block {
+  display: flex;
+  padding-bottom: 60px;
+}
+.footer-img-block a {
+  width: 250px;
+}
+.footer-img-block img {
+  width: 100%;
+}
+.mini-box p {
+  color: white;
+}
+.mini-box {
+  padding: 0 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.date-title {
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+.date {
+  width: 20%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+.title {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  color: rgb(157, 168, 155);
+  margin: 0 0 0 10px;
+}
+.object {
+  margin: 20px 0;
+}
+.footer-top-img-group {
+  margin: 0 210px;
+}
+.footer-img-block-a {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-img-block-a a {
+  color: white;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 10px 80px;
+  position: relative;
+}
+.footer-img-block-a a::after {
+  content: ">";
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  transform: scale(1, 1.8);
+}
+.footer-img-block-a a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(116, 138, 119);
+  transition: all 0.2s;
+}
+.top-go {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-right: 100px;
+}
+.top-border {
+  color: white;
+  margin: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  width: 31px;
+}
+.top-border:hover {
+  cursor: pointer;
+}
+.triangle {
+  padding-right: 6px;
+  display: inline-block;
+  transform: scale(1.2, 1.2);
+}
+.top-font {
+  font-size: 13px;
+}
+
+
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 150px;
+}
+.footer-bottom a {
+  color: white;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+.box1-ul {
+  padding: 0;
+}
+.box1-li {
+  font-weight: bold;
+  position: relative;
+  padding-left: 10px;
+  color: white;
+}
+.box1-li::before {
+  content: "";
+  height: 22px;
+  width: 4px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box1-li-ul {
+  margin: 10px 0 0 0;
+  padding-left: 10px;
+}
+.box1-li-ul-li {
+  padding: 5px 0;
+  font-size: 13px;
+}
+.box1-left, 
+.box1-right {
+  color: white;
+  font-size: 22px;
+  padding-left: 10px;
+}
+.box1-right {
+  padding-left: 80px;
+}
+.box1-left h6, 
+.box1-right h6 {
+  margin: 0;
+  padding: 5px 0;
+}
+.box-left-li,
+.box-right-li {
+  font-size: 13px;
+  position: relative;
+  padding-left: 15px;
+  margin: 10px 0;
+}
+.box-left-li::before,
+.box-right-li::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.footer-bottom-box1 {
+  display: flex;
+}
+
+
+.footer-online {
+  display: flex;
+  width: 100%;
+}
+.footer-online ul {
+  display: flex;
+  padding: 50px 0;
+  width: 1050px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.onlineshop-text {
+  color: white;
+}
+.footer-online a {
+  display: inline-block;
+  width: 250px;
+}
+.footer-online a:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+.footer-online img {
+  display: inline-block;
+  width: 100%;
+}
+.onlineshop-li {
+  width: 260px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-info {
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  margin: 0 auto;
+}
+.link-info a {
+  color: white;
+  font-size: 14px;
+}
+.link-info a:hover {
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+.footer-img {
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-img a {
+  color: white;
+  font-size: 23px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 3px 3px 2px rgb(62, 88, 53);
+  position: relative;
+}
+.footer-img a::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 12px;
+  left: -60px;
+  box-shadow: 3px 3px 2px rgb(62, 88, 53);
+}
+.footer-img a:hover::before,
+.footer-img a:hover::after {
+  background-color: rgb(62, 88, 53);
+}
+.footer-img a::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 12px;
+  right: -60px;
+  box-shadow: 3px 3px 2px rgb(62, 88, 53);
+}
+.footer-img a:hover {
+  color:rgb(79, 107, 82);
+  transition: all 0.2s;
+  text-shadow: 1px 1px 2px rgb(32, 80, 20);
+}
+.sns-link-p {
+  text-align: center;
+}
+.sns-link a {
+  display: inline-block;
+  width: 25px;
+  margin: 0 10px;
+}
+.sns-link a:hover {
+  opacity: 0.5;
+}
+.sns-link img {
+  width: 100%;
+}
+.footer-bottom-text {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px 0;
+  margin: 0;
+}
